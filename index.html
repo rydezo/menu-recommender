@@ -10,5 +10,25 @@
     <header>
         <h1>Chick-fil-A Menu Recommender</h1>
     </header>
+    <h3>Welcome to the Chick-fil-A Menu Recommender! Discover your next favorite meal.</h3>
+    <p>To start, do you have any dietary restrictions? Please select all that apply.</p>
+    <!-- Dietary Restrictions Form -->
+    <form id="restrictions-form">
+        <input type="checkbox" id="nut-free" name="dietary-restrictions" value="Nut-Free">
+        <label for="nut-free">Nut-Free</label><br>
+        <input type="checkbox" id="dairy-free" name="dietary-restrictions" value="Dairy-Free">
+        <label for="dairy-free">Dairy-Free</label><br>
+        <input type="checkbox" id="gluten-free" name="dietary-restrictions" value="Gluten-Free">
+        <label for="gluten-free">Gluten-Free</label><br>
+        <input type="checkbox" id="vegetarian" name="dietary-restrictions" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="dietary-restrictions" value="Vegan">
+        <label for="vegan">Vegan</label><br>
+        <input type="checkbox" id="none" name="dietary-restrictions" value="None">
+        <b><label for="none">None of the above</label></b><br>
+        <button type="submit">Submit Restrictions</button>
+    </form>
+
+    
     <script src="index.js"></script>
 </body>
