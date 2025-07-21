@@ -11,7 +11,7 @@
         <h1>Chick-fil-A Menu Recommender</h1>
     </header>
     <h3>Welcome to the Chick-fil-A Menu Recommender! Discover your next favorite meal.</h3>
-    <p>To start, do you have any dietary restrictions? Please select all that apply.</p>
+    <p class="question">To start, do you have any dietary restrictions? Please select all that apply.</p>
     <!-- Dietary Restrictions Form -->
     <form id="restrictions-form">
         <input type="checkbox" id="nut-free" name="dietary-restrictions" value="Nut-Free">
@@ -24,19 +24,29 @@
         <label for="vegetarian">Vegetarian</label><br>
         <input type="checkbox" id="vegan" name="dietary-restrictions" value="Vegan">
         <label for="vegan">Vegan</label><br>
-        <input type="checkbox" id="none" name="dietary-restrictions" value="None">
-        <b><label for="none">None of the above</label></b><br>
+        <input type="checkbox" id="no-restrictions" name="dietary-restrictions" value="None">
+        <b><label for="no-restrictions">None of the above</label></b><br>
         <button type="submit">Submit Restrictions</button>
     </form>
 
-    <p>Great! Now, do you have any low/high nutritional preferences? Please select all that apply.</p>
+    <p class="question">Great! Now, do you have any low/high nutritional preferences? Please select all that apply.</p>
+    <!-- Nutritional Preferences Form -->
     <form id="nutrition-form">
-        <!--split low and high on left and right respectively-->
-        <h4>Carbs</h4>
-        <input type="checkbox" id="carbs-low" name="nutritional preferences" value="carbs">
-        <label for="carbs-low">Low</label>
-        <input type="checkbox" id="carbs-high" name="nutritional preferences" value="carbs">
-        <label for="carbs-high">High</label>
+        <input type="checkbox" id="low-calories" name="nutritional-preferences" value="Low-Calories">
+        <label for="low-calories">Low Calories (less than 500)</label><br>
+        <input type="checkbox" id="low-carb" name="nutritional-preferences" value="Low-Carb">
+        <label for="low-carb">Low Carb</label><br>
+        <input type="checkbox" id="low-fat" name="nutritional-preferences" value="Low-Fat">
+        <label for="low-fat">Low Fat</label><br>
+        <input type="checkbox" id="low-sodium" name="nutritional-preferences" value="Low-Sodium">
+        <label for="low-sodium">Low Sodium</label><br>
+        <input type="checkbox" id="high-calories" name="nutritional-preferences" value="High-Calories">
+        <label for="high-calories">High Calories (more than 1000)</label><br>
+        <input type="checkbox" id="high-protein" name="nutritional-preferences" value="High-Protein">
+        <label for="high-protein">High Protein</label><br>
+        <input type="checkbox" id="no-preferences" name="nutritional-preferences" value="None">
+        <b><label for="no-preferences">No preferences</label></b><br>
+        <button type="submit">Submit Preferences</button>
     </form>
     <script src="index.js"></script>
 </body>
