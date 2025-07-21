@@ -29,9 +29,14 @@
         <button type="submit">Submit Restrictions</button>
     </form>
 
-    <p>Great! Now, do you have any low/high nutritional preferences?</p>
+    <p>Great! Now, do you have any low/high nutritional preferences? Please select all that apply.</p>
     <form id="nutrition-form">
         <!--split low and high on left and right respectively-->
+        <h4>Carbs</h4>
+        <input type="checkbox" id="carbs-low" name="nutritional preferences" value="carbs">
+        <label for="carbs-low">Low</label>
+        <input type="checkbox" id="carbs-high" name="nutritional preferences" value="carbs">
+        <label for="carbs-high">High</label>
     </form>
     <script src="index.js"></script>
 </body>
