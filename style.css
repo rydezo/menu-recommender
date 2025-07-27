@@ -10,3 +10,12 @@ header {
     margin-top: 20px;
     color: #333;
 }
+
+button {
+    background-color: #ff6666;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

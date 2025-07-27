@@ -22,24 +22,20 @@
         <label for="gluten-free">Gluten-Free</label><br>
         <input type="checkbox" id="vegetarian" name="dietary-restrictions" value="Vegetarian">
         <label for="vegetarian">Vegetarian</label><br>
-        <input type="checkbox" id="vegan" name="dietary-restrictions" value="Vegan">
-        <label for="vegan">Vegan</label><br>
         <input type="checkbox" id="no-restrictions" name="dietary-restrictions" value="None">
         <b><label for="no-restrictions">None of the above</label></b><br>
         <button type="submit">Submit Restrictions</button>
     </form>
 
-    <p class="question">Great! Now, do you have any low/high nutritional preferences? Please select all that apply.</p>
+    <p class="question">Great! Now, do you have any nutritional preferences? Please select all that apply.</p>
     <!-- Nutritional Preferences Form -->
     <form id="nutrition-form">
         <input type="checkbox" id="low-calories" name="nutritional-preferences" value="Low-Calories">
         <label for="low-calories">Low Calories (less than 500)</label><br>
         <input type="checkbox" id="low-carb" name="nutritional-preferences" value="Low-Carb">
-        <label for="low-carb">Low Carb</label><br>
-        <input type="checkbox" id="low-fat" name="nutritional-preferences" value="Low-Fat">
-        <label for="low-fat">Low Fat</label><br>
+        <label for="low-carb">Carb conscious</label><br>
         <input type="checkbox" id="low-sodium" name="nutritional-preferences" value="Low-Sodium">
-        <label for="low-sodium">Low Sodium</label><br>
+        <label for="low-sodium">Sodium conscious</label><br>
         <input type="checkbox" id="high-calories" name="nutritional-preferences" value="High-Calories">
         <label for="high-calories">High Calories (more than 1000)</label><br>
         <input type="checkbox" id="high-protein" name="nutritional-preferences" value="High-Protein">
@@ -59,6 +55,42 @@
         <input type="radio" id="no-chicken-pref" name="chicken-preference" value="None">
         <b><label for="no-chicken-pref">No preference</label></b>
     </form>
-    <!--new commit-->
+    
+    <p class="question">Do you have a budget for your meal?</p>
+    <!-- Budget Form -->
+    <form id="budget-form">
+        <input type="radio" id="low-budget" name="budget" value="Low">
+        <label for="low-budget">Low (Under $10)</label><br>
+        <input type="radio" id="medium-budget" name="budget" value="Medium">
+        <label for="medium-budget">Medium ($10 - $20)</label><br>
+        <input type="radio" id="high-budget" name="budget" value="High">
+        <label for="high-budget">High (Over $20)</label><br>
+        <input type="radio" id="no-budget" name="budget" value="None">
+        <b><label for="no-budget">No budget</label></b><br>
+        <button type="submit">Submit Budget</button>
+    </form>
+
+    <p class="question">Finally, how hungry are you feeling today?</p>
+    <!-- Hunger Level Form -->
+    <form id="hunger-level-form">
+        <input type="radio" id="somewhat-hungry" name="hunger-level" value="Somewhat Hungry">
+        <label for="somewhat-hungry">Somewhat Hungry</label><br>
+        <input type="radio" id="hungry" name="hunger-level" value="Hungry">
+        <label for="hungry">Hungry</label><br>
+        <input type="radio" id="very-hungry" name="hunger-level" value="Very Hungry">
+        <label for="very-hungry">Very Hungry</label><br>
+        <button type="submit">Submit Hunger Level</button>
+    </form>
+
+    <p class="question">Bonus: would you like a milkshake or dessert?</p>
+    <!-- Dessert Preference Form -->
+    <form id="dessert-form">
+        <input type="radio" id="yes-dessert" name="dessert-preference" value="Yes">
+        <label for="yes-dessert">Yes, please!</label><br>
+        <input type="radio" id="no-dessert" name="dessert-preference" value="No">
+        <label for="no-dessert">No, thank you</label><br>
+        <button type="submit">Submit Dessert Preference</button>
+    </form>
+
     <script src="index.js"></script>
 </body>
