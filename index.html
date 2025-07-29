@@ -11,9 +11,8 @@
         <h1>Chick-fil-A Menu Recommender</h1>
     </header>
     <h3>Welcome to the Chick-fil-A Menu Recommender! Discover your next favorite meal.</h3>
-    <p class="question">To start, do you have any dietary restrictions? Please select all that apply.</p>
-    <!-- Dietary Restrictions Form -->
-    <form id="restrictions-form">
+    <form id="menu-recommender-form">
+        <p class="question">To start, do you have any dietary restrictions? Please select all that apply.</p>
         <input type="checkbox" id="nut-free" name="dietary-restrictions" value="Nut-Free">
         <label for="nut-free">Nut-Free</label><br>
         <input type="checkbox" id="dairy-free" name="dietary-restrictions" value="Dairy-Free">
@@ -24,12 +23,8 @@
         <label for="vegetarian">Vegetarian</label><br>
         <input type="checkbox" id="no-restrictions" name="dietary-restrictions" value="None">
         <b><label for="no-restrictions">None of the above</label></b><br>
-        <button type="submit">Submit Restrictions</button>
-    </form>
 
-    <p class="question">Great! Now, do you have any nutritional preferences? Please select all that apply.</p>
-    <!-- Nutritional Preferences Form -->
-    <form id="nutrition-form">
+        <p class="question">Great! Now, do you have any nutritional preferences? Please select all that apply.</p>
         <input type="checkbox" id="low-calories" name="nutritional-preferences" value="Low-Calories">
         <label for="low-calories">Low Calories (less than 500)</label><br>
         <input type="checkbox" id="low-carb" name="nutritional-preferences" value="Low-Carb">
@@ -42,23 +37,16 @@
         <label for="high-protein">High Protein</label><br>
         <input type="checkbox" id="no-preferences" name="nutritional-preferences" value="None">
         <b><label for="no-preferences">No preferences</label></b><br>
-        <button type="submit">Submit Preferences</button>
-    </form>
 
-    <p class="question">Are you craving original or grilled chicken today?</p>
-    <!-- Chicken Preference Form -->
-    <form id="chicken-preference">
+        <p class="question">Are you craving original or grilled chicken today?</p>
         <input type="radio" id="original" name="chicken-preference" value="Original">
         <label for="original">Original (Fried)</label><br>
         <input type="radio" id="grilled" name="chicken-preference" value="Grilled">
         <label for="grilled">Grilled</label><br>
         <input type="radio" id="no-chicken-pref" name="chicken-preference" value="None">
-        <b><label for="no-chicken-pref">No preference</label></b>
-    </form>
-    
-    <p class="question">Do you have a budget for your meal?</p>
-    <!-- Budget Form -->
-    <form id="budget-form">
+        <b><label for="no-chicken-pref">No preference</label></b><br>
+
+        <p class="question">Do you have a budget for your meal?</p>
         <input type="radio" id="low-budget" name="budget" value="Low">
         <label for="low-budget">Low (Under $10)</label><br>
         <input type="radio" id="medium-budget" name="budget" value="Medium">
@@ -67,30 +55,23 @@
         <label for="high-budget">High (Over $20)</label><br>
         <input type="radio" id="no-budget" name="budget" value="None">
         <b><label for="no-budget">No budget</label></b><br>
-        <button type="submit">Submit Budget</button>
-    </form>
 
-    <p class="question">Finally, how hungry are you feeling today?</p>
-    <!-- Hunger Level Form -->
-    <form id="hunger-level-form">
+        <p class="question">Finally, how hungry are you feeling today?</p>
         <input type="radio" id="somewhat-hungry" name="hunger-level" value="Somewhat Hungry">
         <label for="somewhat-hungry">Somewhat Hungry</label><br>
         <input type="radio" id="hungry" name="hunger-level" value="Hungry">
         <label for="hungry">Hungry</label><br>
         <input type="radio" id="very-hungry" name="hunger-level" value="Very Hungry">
         <label for="very-hungry">Very Hungry</label><br>
-        <button type="submit">Submit Hunger Level</button>
-    </form>
 
-    <p class="question">Bonus: would you like a milkshake or dessert?</p>
-    <!-- Dessert Preference Form -->
-    <form id="dessert-form">
+        <p class="question">Bonus: would you like a milkshake or dessert?</p>
         <input type="radio" id="yes-dessert" name="dessert-preference" value="Yes">
         <label for="yes-dessert">Yes, please!</label><br>
         <input type="radio" id="no-dessert" name="dessert-preference" value="No">
-        <label for="no-dessert">No, thank you</label><br>
-        <button type="submit">Submit Dessert Preference</button>
-    </form>
+        <label for="no-dessert"><b>No, thank you</b></label><br>
 
+        <button type="submit">Submit All Preferences</button>
+    </form>
     <script src="index.js"></script>
 </body>
+</html>
