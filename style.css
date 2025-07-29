@@ -1,21 +1,116 @@
+body {
+    background: #fffdfa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: #ffcccc;
-    padding: 20px;
+    background-color: #e51636;
+    padding: 28px 20px 20px 20px;
     text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #f7c59f;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+h3 {
+    text-align: center;
+    color: #e51636;
+    margin-top: 18px;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+form {
+    background: #fff;
+    max-width: 480px;
+    margin: 32px auto 0 auto;
+    padding: 32px 32px 24px 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(229,22,54,0.10), 0 1.5px 0 #f7c59f;
+    border: 2px solid #f7c59f;
 }
 
 .question {
-    font-family: Arial, sans-serif;
-    font-size: 1.2em;
-    margin-top: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.18em;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    color: #e51636;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+label {
+    font-size: 1em;
     color: #333;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: #e51636;
+    transform: scale(1.15);
+    margin-right: 4px;
+    margin-bottom: 6px;
+}
+
+input[type="checkbox"]:focus + label,
+input[type="radio"]:focus + label {
+    outline: 2px solid #e51636;
+    outline-offset: 2px;
+}
+
+b label, label b {
+    color: #e51636;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 button {
-    background-color: #ff6666;
+    background-color: #e51636;
     color: white;
-    padding: 8px 20px;
+    padding: 12px 32px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 28px;
+    box-shadow: 0 2px 8px rgba(229,22,54,0.10);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover, button:focus {
+    background-color: #b31228;
+    transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 18px 8px 16px 8px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .question {
+        font-size: 1.1em;
+    }
+    button {
+        padding: 10px 24px;
+        font-size: 1em;
+    }
 }
