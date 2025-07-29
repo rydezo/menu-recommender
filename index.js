@@ -1,15 +1,29 @@
 console.log("Menu Recommender initialized");
 
-const checkboxes = document.querySelectorAll('.exclusive-checkbox');
-
-checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener('change', function () {
+// Exclusivity for dietary restrictions
+document.getElementById('no-restrictions').addEventListener('change', function() {
     if (this.checked) {
-      checkboxes.forEach((otherCheckbox) => {
-        if (otherCheckbox !== this) {
-          otherCheckbox.checked = false;
-        }
-      });
+        document.querySelectorAll('input[name="dietary-restrictions"]:not(#no-restrictions)').forEach(cb => cb.checked = false);
     }
-  });
+});
+document.querySelectorAll('input[name="dietary-restrictions"]:not(#no-restrictions)').forEach(cb => {
+    cb.addEventListener('change', function() {
+        if (this.checked) {
+            document.getElementById('no-restrictions').checked = false;
+        }
+    });
+});
+
+// Exclusivity for nutritional preferences
+document.getElementById('no-preferences').addEventListener('change', function() {
+    if (this.checked) {
+        document.querySelectorAll('input[name="nutritional-preferences"]:not(#no-preferences)').forEach(cb => cb.checked = false);
+    }
+});
+document.querySelectorAll('input[name="nutritional-preferences"]:not(#no-preferences)').forEach(cb => {
+    cb.addEventListener('change', function() {
+        if (this.checked) {
+            document.getElementById('no-preferences').checked = false;
+        }
+    });
 });
