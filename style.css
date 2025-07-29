@@ -31,8 +31,9 @@ h3 {
 
 form {
     background: #fff;
-    max-width: 480px;
+    max-width: 520px;
     margin: 32px auto 0 auto;
+    margin-bottom: 30px;
     padding: 32px 32px 24px 32px;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(229,22,54,0.10), 0 1.5px 0 #f7c59f;
