@@ -27,3 +27,18 @@ document.querySelectorAll('input[name="nutritional-preferences"]:not(#no-prefere
         }
     });
 });
+
+// Prevent selecting both "Low Calories" and "High Calories"
+const lowCalories = document.getElementById('low-calories');
+const highCalories = document.getElementById('high-calories');
+
+lowCalories.addEventListener('change', function() {
+    if (this.checked) {
+        highCalories.checked = false;
+    }
+});
+highCalories.addEventListener('change', function() {
+    if (this.checked) {
+        lowCalories.checked = false;
+    }
+});
